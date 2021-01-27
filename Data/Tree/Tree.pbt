@@ -1865,7 +1865,15 @@ Objects {
       Int: 0
     }
     Overrides {
+      Name: "cs:WhichMaze"
+      Int: 0
+    }
+    Overrides {
       Name: "cs:RestartTime:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:WhichMaze:isrep"
       Bool: true
     }
   }
@@ -3076,7 +3084,7 @@ Objects {
       WalkSpeed: 640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
-      JumpMaxCount: 5
+      JumpMaxCount: 1
       JumpVelocity: 900
       GroundFriction: 8
       GravityScale: 1.9
@@ -3184,6 +3192,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
         }

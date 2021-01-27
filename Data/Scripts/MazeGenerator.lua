@@ -4,7 +4,12 @@
 -- Create an empty maze array.
 local propMazeGroup = script:GetCustomProperty("MazeGroup"):WaitForObject()
 local propMazeBlock = script:GetCustomProperty("MazeBlock")
+while not ( tonumber(script.parent.parent.name) ==script.parent.parent:GetCustomProperty("WhichMaze")) do
+   Task.Wait()
+end
+print(" randomseed "..script.parent.parent.name)
 
+local rs = RandomStream.New(tonumber(script.parent.parent.name))
 function init_maze(width, height)
     local result = {}
     for y = 0, height - 1 do
@@ -38,7 +43,7 @@ function init_maze(width, height)
  
  -- Carve the maze starting at x, y.
  function carve_maze(maze, width, height, x, y)
-    local r = math.random(0, 3)
+    local r = rs:GetInteger(0, 3)
     maze[y * width + x] = 0
     for i = 0, 3 do
        local d = (i + r) % 4
@@ -71,7 +76,8 @@ function init_maze(width, height)
  height = 31
  
  -- Initialize random number generator
- math.randomseed(tonumber(script.parent.parent.name))
+
+
  
  -- Generate and display a random maze.
  maze = init_maze(width, height)

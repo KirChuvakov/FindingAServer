@@ -18,8 +18,9 @@ function Restart()
     end
     isRestart = false
     restartTime = math.floor(time()+900)
-    
-    script.parent.name = ""..math.floor(math.random()*10000+1)
+    local whichMaze = math.floor(math.random()*10000+1)
+    script.parent.name = ""..whichMaze
+    script.parent:SetNetworkedCustomProperty("WhichMaze", whichMaze)
     script.parent:SetNetworkedCustomProperty("RestartTime", restartTime)
     if Object.IsValid(maze) then
         maze:Destroy()
