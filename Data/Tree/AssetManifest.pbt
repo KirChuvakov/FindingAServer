@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13495047119488115750
-  Name: "Big Rock Boulder Ground Impact 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -68,14 +59,5 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_tornado"
-  }
-}
-Assets {
-  Id: 3162420016552991139
-  Name: "Gibs Explosion VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_bloody_explosion"
   }
 }
