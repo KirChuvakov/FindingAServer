@@ -8,12 +8,39 @@ Assets {
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
+  Id: 15681070827740880104
+  Name: "Text 03: X"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_023"
+  }
+}
+Assets {
+  Id: 15144873223886387711
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 13495047119488115750
+  Name: "Big Rock Boulder Ground Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
+  }
+}
+Assets {
+  Id: 12111246897055192741
+  Name: "Marble Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_001_uv"
   }
 }
 Assets {
@@ -26,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
   Id: 9728747257159326892
   Name: "Layered Thrusters VFX"
   PlatformAssetType: 8
@@ -44,12 +62,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
+  Id: 9724503392191245000
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
   }
 }
 Assets {
@@ -59,5 +77,23 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_tornado"
+  }
+}
+Assets {
+  Id: 3162420016552991139
+  Name: "Gibs Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bloody_explosion"
+  }
+}
+Assets {
+  Id: 198353679974341757
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
   }
 }

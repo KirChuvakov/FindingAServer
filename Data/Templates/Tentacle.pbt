@@ -1666,4 +1666,5 @@ Assets {
     }
   }
   SerializationVersion: 73
+  DirectlyPublished: true
 }

@@ -1,4 +1,10 @@
 GlobalEntries {
+  Id: "1748f362ebfd47a386c05fdd015055f1"
+  Name: "Arudo"
+  ScoreFormatted: "8.0"
+  DateTime: "2021-01-30T06:24:22.329Z"
+}
+GlobalEntries {
   Id: "7fb563fa955c4d029b27ac51cec520d7"
   Name: "Kirch"
   ScoreFormatted: "8.0"
