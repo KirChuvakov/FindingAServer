@@ -20,6 +20,7 @@ Objects {
   ChildIds: 9304081314933776906
   ChildIds: 15928221041142274704
   ChildIds: 10785347340470443817
+  ChildIds: 5059136090743181201
   ChildIds: 18050707814190269207
   ChildIds: 11864858560256172657
   ChildIds: 7947246679127100656
@@ -33,6 +34,7 @@ Objects {
   ChildIds: 8747387354704810965
   ChildIds: 15168886914022558807
   ChildIds: 14412367467725537905
+  ChildIds: 9222073312566902990
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,6 +44,49 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 9222073312566902990
+  Name: "StunEquipment"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4511282070174474041
+      value {
+        Overrides {
+          Name: "Name"
+          String: "StunEquipment"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4016272788206617184
+    }
   }
 }
 Objects {
@@ -1515,6 +1560,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:spawnPoint"
+      ObjectReference {
+        SelfId: 16813558807825262224
+      }
+    }
+    Overrides {
       Name: "cs:TimeWhenDamage:isrep"
       Bool: true
     }
@@ -1794,6 +1845,7 @@ Objects {
   }
   ParentId: 6383894410152326012
   ChildIds: 16101031423987855134
+  ChildIds: 10784956031059266980
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1817,6 +1869,221 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10784956031059266980
+  Name: "Stun"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15879071355136747681
+  ChildIds: 17395645175726171723
+  ChildIds: 861323676604786267
+  ChildIds: 12077130389049696176
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12077130389049696176
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10784956031059266980
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIY: 65.4043274
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "STUN"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 50
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 861323676604786267
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10784956031059266980
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 75
+    Height: 75
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 868419210112187611
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17395645175726171723
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10784956031059266980
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 1300
+    Height: 1300
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 4248641823001566300
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -2028,6 +2295,12 @@ Objects {
         SelfId: 9541346288590675162
       }
     }
+    Overrides {
+      Name: "cs:stunframe"
+      ObjectReference {
+        SelfId: 10784956031059266980
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2182,7 +2455,7 @@ Objects {
   Name: "World Text"
   Transform {
     Location {
-      X: 454.38147
+      X: 597.607605
       Y: -247.196991
       Z: 179.709427
     }
@@ -2205,8 +2478,9 @@ Objects {
   Text {
     Text: "FIND A SERVER<br>>>>>>>>>>>>>>"
     Color {
-      R: 0.00509932777
-      G: 0.0700000525
+      R: 1
+      G: 1
+      B: 1
       A: 1
     }
     HorizontalSize: 1
@@ -2265,6 +2539,56 @@ Objects {
         Mass: 100
         LinearDamping: 0.01
       }
+    }
+  }
+}
+Objects {
+  Id: 5059136090743181201
+  Name: "Ability Display"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1197405803885299036
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ability Display"
+        }
+        Overrides {
+          Name: "cs:ShowAbilityName"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14155720757392291425
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 868419210112187611
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13490938874024648453
     }
   }
 }
@@ -3835,7 +4159,7 @@ Objects {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
-      MountChannelingTime: 2
+      MountChannelingTime: 1
       FlipOnMultiJump: true
       CanMoveUp: true
       CanMoveDown: true

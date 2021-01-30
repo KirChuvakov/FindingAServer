@@ -20,7 +20,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8588053707005770663
+              Id: 12111246897055192741
             }
           }
         }
@@ -57,12 +57,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8588053707005770663
-      Name: "Bricks Stone Block 01"
+      Id: 12111246897055192741
+      Name: "Marble Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_bricks_stone_block_001"
+        AssetId: "mi_gen_marble_tiles_001_uv"
       }
     }
     PrimaryAssetId {

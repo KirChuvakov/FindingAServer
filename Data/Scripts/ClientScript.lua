@@ -1,6 +1,8 @@
 local propNetworkedMaze = script:GetCustomProperty("NetworkedMaze"):WaitForObject()
 local propServersfoundText = script:GetCustomProperty("serversfoundText"):WaitForObject()
 local propRestarttext = script:GetCustomProperty("restarttext"):WaitForObject()
+local propStunframe = script:GetCustomProperty("stunframe"):WaitForObject()
+
 
 local player = Game.GetLocalPlayer()
 function Tick()
@@ -12,5 +14,10 @@ function Tick()
         propRestarttext.text = "Maze will restart in: "..estimatedTime
     else
         propRestarttext.visibility = Visibility.FORCE_OFF
+    end
+    if player.movementControlMode ~= MovementControlMode.NONE then
+        propStunframe.visibility = Visibility.FORCE_OFF
+    else
+        propStunframe.visibility = Visibility.FORCE_ON
     end
 end

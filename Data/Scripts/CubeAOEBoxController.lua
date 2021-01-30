@@ -16,6 +16,7 @@ local propSe3 = script:GetCustomProperty("se3"):WaitForObject()
 local propFx1 = script:GetCustomProperty("fx1"):WaitForObject()
 
 
+local propSpawnPoint = script:GetCustomProperty("spawnPoint"):WaitForObject()
 
 
 
@@ -29,7 +30,8 @@ function Tick(deltaTime)
         overlappers = propTriggerToDamage:GetOverlappingObjects()
         for i = 1, #overlappers do
             if overlappers[i]:IsA("Player") then
-                overlappers[i]:ApplyDamage(Damage.New(propDamage))
+                overlappers[i]:SetWorldPosition(propSpawnPoint:GetWorldPosition())
+                overlappers[i]:SetMounted(true)
             end
         end
         script:SetNetworkedCustomProperty("isAttacked",true)

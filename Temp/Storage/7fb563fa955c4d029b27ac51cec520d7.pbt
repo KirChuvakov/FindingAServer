@@ -3,6 +3,6 @@ Entries {
     StringVar: "ServersFound"
   }
   SimpleValue {
-    IntVar: 8
+    IntVar: 10
   }
 }

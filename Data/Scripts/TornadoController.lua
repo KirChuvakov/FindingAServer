@@ -20,5 +20,6 @@ end
 propTrigger.beginOverlapEvent:Connect(function(tr, other)
     if other:IsA("Player") then
         other:SetWorldPosition(propSpawnPoint:GetWorldPosition())
+        other:SetMounted(true)
     end
 end)

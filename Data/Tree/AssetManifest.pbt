@@ -80,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4248641823001566300
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 3162420016552991139
   Name: "Gibs Explosion VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_bloody_explosion"
+  }
+}
+Assets {
+  Id: 868419210112187611
+  Name: "Fantasy Ability Blue 014"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Blue_014"
   }
 }
 Assets {

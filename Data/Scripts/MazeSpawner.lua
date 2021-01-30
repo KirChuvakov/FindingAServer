@@ -14,6 +14,7 @@ function Restart()
     for i = 1, #players do
         players[i]:SetWorldPosition(propSpawnPoint:GetWorldPosition())
         players[i].serverUserData.collectedServer = false
+        players[i]:SetMounted(true)
         -- statements
     end
     isRestart = false
@@ -55,6 +56,9 @@ Game.playerJoinedEvent:Connect(function(player)
     if data and data.ServersFound then
         player:SetResource("ServersFound", data.ServersFound)
     end
+    local stunABility = World.SpawnAsset("37BCAAD25E1F8260:StunEquipment")
+    stunABility:Equip(player)
+    player:SetMounted(true)
 end)
 Game.playerLeftEvent:Connect(function(player)
     print("Left")
